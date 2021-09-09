@@ -1,0 +1,24 @@
+{
+    "weather": [
+        {
+            "cityId": 1,
+            "cityName": "Cambridge",
+            "currentConditions": "Sleet",
+            "temperature": 8,
+            "windSpeed": 27,
+            "windDirection": "Easterly",
+            "windChillFactor": 6
+        },
+
+        {
+            "cityId": 2,
+            "cityName": "Canterbury",
+            "currentConditions": "Cloud",
+            "temperature": 30,
+            "windSpeed": 17,
+            "windDirection": "South easterly",
+            "windChillFactor": 29
+        }
+
+    ]
+}
