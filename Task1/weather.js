@@ -17,10 +17,36 @@
                case "Hail":
                   icon = '<img src="./weather_icons/hail.png" alt="hail" width="22px"/>';
                   break;
-               
+               case "Heavy Cloud":
+                  icon = '<img src="./weather_icons/heavy cloud.png" alt="heavy-clouds" width="22px"/>';
+                  break;
+               case "Heavy Rain":
+                  icon = '<img src="./weather_icons/heavy rain.png" alt="heavy-rain" width="22px"/>';
+                  break;
+               case "Mist":
+                  icon = '<img src="./weather_icons/mist.png" alt="mist" width="22px"/>';
+                  break;
+               case "Rain":
+                  icon = '<img src="./weather_icons/rain.png" alt="rain" width="22px"/>';
+                  break;
+               case "Sleet":
+                  icon = '<img src="./weather_icons/sleet.png" alt="sleet" width="22px"/>';
+                  break;
+               case "Snow":
+                  icon = '<img src="./weather_icons/snow.png" alt="snow" width="22px"/>';
+                  break;
+               case "Sun":
+                  icon = '<img src="./weather_icons/sun.png" alt="sun" width="22px"/>';
+                  break;
+               case "Sun and Clouds":
+                  icon = '<img src="./weather_icons/sun and cloud.png" alt="sun-clouds" width="22px"/>';
+                  break
+               case "Thunderstorm":
+                icon = '<img src="./weather_icons/thunderstorm.png" alt="thunderstorm" width="22px"/>';
+                break;
              }
 
-      			 
+      			
 			 },
 
 		   error: function() {

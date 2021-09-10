@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Weather App",
+  "description": "A simple App for Weather in UK",
+  "type": "object",
+  "properties": {
+
+  }
+}
