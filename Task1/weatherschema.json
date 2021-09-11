@@ -4,6 +4,23 @@
   "description": "A simple App for Weather in UK",
   "type": "object",
   "properties": {
+    "weather": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "windSpeed": {
+            "type": "number",
+            "minimum": 0
+          },
+          "cityName": {
+            "type": "string"
+          }
 
+        },
+        "required": ["cityId", "cityName", "currentConditions", "temperature", "windSpeed", "windDirection", "windChillFactor"]
+
+      }
+    }
   }
 }

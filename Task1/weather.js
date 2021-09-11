@@ -46,7 +46,24 @@
                 break;
              }
 
-      			
+      			 sTxt += '<tr><td>' +  //adding data to table
+      			    response.weather[index].cityName +
+             ' </td><td id="#condition">' +
+                icon +
+      			    response.weather[index].currentConditions +
+      			 ' </td><td>' +
+      			    response.weather[index].temperature +
+      			 '&#8451; </td><td>' +
+      			    response.weather[index].windSpeed +
+      			 ' mph </td><td>' +
+      			    response.weather[index].windDirection +
+      			 ' </td><td>' +
+      			    response.weather[index].windChillFactor +
+      			 '&#8451</td></tr>';
+  			  });
+			      sTxt += '</table>'; // finish table
+			   $('#weatherContainer').append(sTxt);
+			   updateWeather();
 			 },
 
 		   error: function() {
