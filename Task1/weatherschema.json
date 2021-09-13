@@ -26,6 +26,13 @@
           "windSpeed": {
             "type": "number",
             "minimum": 0
+          },
+          "windDirection": {
+            "type": "string",
+            "enum": ["Northerly", "North easterly", "Easterly", "South easterly", "Southerly", "South westerly", "Westerly", "North westerly"]
+          },
+          "windChillFactor": {
+            "type": "number"
           }
 
         },
