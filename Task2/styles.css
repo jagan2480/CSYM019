@@ -1,0 +1,30 @@
+/*-------Styling Body------*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #6441A5; 
+  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+  background: linear-gradient(to right, #2a0845, #6441A5); 
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/*-------Header------*/
+
+h1{
+  font-size: 40px;
+    color: #fff; 
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+}
+
