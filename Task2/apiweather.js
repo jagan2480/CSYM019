@@ -25,6 +25,17 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#city").change(function() {   //getting city by name
+		var cityValue = $("#city").val();
+			getWeatherApi(cityValue);
+	});
+
+	function city(country) { //getting the html file containing cities
+		$("#city").empty();
+		$.get(country+"_cities.html", function( cities) {
+		$("#city").append(cities);
+		});
+	}
+
 	
-  
 });
