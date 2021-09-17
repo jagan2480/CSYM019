@@ -143,6 +143,52 @@ $(document).ready(function() {
 				}
   		});
 
+//-------------------Conversions----------------------------------
 
+	function unixToDate(unix_timestamp){ // unix time to date conversion e.g. 14/02/2015
+			var date = new Date(unix_timestamp*1000);
+			var year = date.getFullYear();
+			var month = ("0"+(date.getMonth()+1)).substr(-2);
+			var day = ("0"+date.getDate()).substr(-2);
+			return day+"/"+month+"/"+year;
+		}
+
+    function toCelsius(kelvin){ // kelvin to celsius conversion
+  		var celsius = kelvin - 273.15; // 0(kelvin) = -273.15 Celsius
+		var degree = Math.round(celsius)
+  		return degree;
+  	}
+
+  	function toMph(knots){ // mph conversion
+  		var mph = knots * 1.15078;
+			var speed = Math.round(mph);
+  		return speed;
+  	}
+  	
+  	function cToF(c) { // celsius to fahrenheit conversion
+  		return Math.round((c * (9/5)) + 32);
+	}
+
+  	function degConv(deg){ //getting wind direction as integer and converting into string
+  		if (deg>0 && deg<25){
+  			return "Northerly";
+  		}else if (deg>25 && deg<65){
+  			return "North easterly";
+  		}else if (deg>65 && deg<115){
+  			return "Easterly";
+  		}else if (deg>115 && deg<155){
+  			return "South easterly";
+  		}else if (deg>155 && deg<205){
+  			return "Southerly";
+  		}else if (deg>205 && deg<245){
+  			return "South westerly";
+        }else if (deg>245 && deg<295){
+  			return "Westerly";
+  		}else if (deg>295 && deg<335){
+  			return "North westerly";
+  		}else if (deg>335){
+  			return "Northerly";
+  		}
+  	}
   }
 });
